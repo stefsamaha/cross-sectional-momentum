@@ -22,7 +22,7 @@ Volatility targeting changes **how much capital is allocated**, not **which stoc
 ---
 
 ## Repository structure
-
+```text
 ├── src/ # Core research logic (signals, backtest, metrics, plots)
 ├── scripts/
 │ └── run_backtest.py # End-to-end backtest runner
@@ -34,7 +34,7 @@ Volatility targeting changes **how much capital is allocated**, not **which stoc
 ├── reports/ # report.md
 ├── README.md
 └── requirements.txt
-
+```
 ---
 
 ## Quickstart
@@ -66,15 +66,20 @@ data/outputs/Figure_4_Volatility_Targeting.png
 ## Results
 ### Long-only momentum equity curve
 Growth of $1 invested in the baseline long-only momentum strategy.
+![Equity Curve](data/outputs/Figure_1_Equity_Curve.png)
 
 ### Drawdowns
-Maximum losses from previous equity peaks.
+Maximum losses from previous equity peaks
+
+![Drawdowns](data/outputs/Figure_2_Drawdowns.png)
 
 ### Monthly return distribution
-Histogram of monthly net returns.
+Histogram of monthly net returns
+![Monthly Returns Histogram](data/outputs/Figure_3_Histogram.png)
 
 ### Effect of volatility targeting
 Baseline vs volatility-targeted strategy.
+![Volatility Targeting](data/outputs/Figure_4_Volatility_Targeting.png)
 
 ---
 
