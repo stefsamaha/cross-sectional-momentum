@@ -1,6 +1,6 @@
 # Cross-Sectional Momentum with Volatility Targeting
 
-A clean, research-quality systematic equity strategy built on **cross-sectional momentum** —
+A clean, research-quality systematic equity strategy built on **cross-sectional momentum** -
 with full backtest, drawdown analysis, and volatility-targeted risk control.
 
 **Author:** Stefanie Samaha
@@ -42,7 +42,7 @@ Long-only baseline vs. volatility-targeted strategy — 15-year equity curve.
 ## Strategy Overview
 
 Each month:
-1. Compute the **12–1 momentum signal** for each stock — past 12 months of returns, skipping the most recent month to reduce noise
+1. Compute the **12–1 momentum signal** for each stock - past 12 months of returns, skipping the most recent month to reduce noise
 2. Rank all stocks by signal
 3. Go **long-only the top 10%**, equally weighted
 4. Apply **volatility targeting** to scale exposure toward a fixed risk budget
@@ -70,7 +70,7 @@ The baseline momentum strategy exhibits large time-varying drawdowns. Volatility
 - Estimate realized strategy volatility using a rolling 12-month window
 - Scale exposure so expected volatility stays near a **fixed 6% monthly target**
 - Apply a **2× leverage cap** to prevent extreme positions
-- Stock selection is unchanged — only position size adjusts
+- Stock selection is unchanged - only position size adjusts
 
 Result: substantially smoother equity curve and reduced drawdowns without altering the underlying signal.
 
@@ -127,7 +127,7 @@ Outputs saved to `data/outputs/`.
 
 - Yahoo Finance data (not institutional-grade)
 - Fixed universe may introduce survivorship bias
-- Zero transaction costs — real performance would be lower
+- Zero transaction costs - real performance would be lower
 - Results demonstrate correct methodology, not production performance
 
 ---
@@ -137,4 +137,4 @@ Outputs saved to `data/outputs/`.
 - Sector-neutral portfolio construction
 - Market regime filters (e.g. trend following overlay)
 - Alternative signal definitions (earnings momentum, analyst revisions)
-- ML-based ranking models — see [`ml-alpha-ranker`](https://github.com/stefsamaha/ml-alpha-ranker) which builds directly on this baseline
+- ML-based ranking models - see [`ml-alpha-ranker`](https://github.com/stefsamaha/ml-alpha-ranker) which builds directly on this baseline
